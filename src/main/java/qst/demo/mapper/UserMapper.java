@@ -20,6 +20,4 @@ public interface UserMapper {
     void modify(User user);
 
 
-    @Select("select* from user")
-    List<User>getUserList();
 }
