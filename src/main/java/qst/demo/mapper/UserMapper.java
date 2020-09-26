@@ -19,4 +19,7 @@ public interface UserMapper {
     @Update("update user set user_name=#{user_name} where user_id=#{user_id}")
     void modify(User user);
 
+
+    @Select("select* from user")
+    List<User>getUserList();
 }
